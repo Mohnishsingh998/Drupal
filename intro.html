@@ -5,10 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      *{
-        box-sizing: border-box;  
-        /* it is used for the  */
-      }
+            *{
+              box-sizing: border-box;
+              /* it is used for the  */
+            }
+            header{
+              background-color: black;
+              padding: 20px;
+              color: wheat;
+              text-align: center;
+              font-size: 25px;
+            }
+            nav{
+              float: left;
+              width: 30%;
+              height: 300px;
+              background: #ccc;
+              padding: 20px;
+            }
+            nav ul{
+              list-style-type: none;
+              padding: 0;
+            }
+
+            article{
+              padding: 20px;
+              float: left;
+              width: 70%;
+              height: 300px;
+              background-color: #f1f1f1;
+            }
+
+            section ::after{
+              content : "";
+              display: table;
+              clear: both;
+            }
+
+            footer p{
+              background-color: #777;
+              padding:20px;
+              text-align: center;
+              color: white;
+            }
     </style>
   </head>
   <body>
