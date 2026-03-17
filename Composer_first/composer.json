@@ -1,0 +1,16 @@
+{
+    "name": "application/01",
+    "description": "My First Project with composer",
+    "autoload": {
+        "psr-4": {
+            "Application\\01\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohnishsingh yadav",
+            "email": "132808264+Mohnishsingh998@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
