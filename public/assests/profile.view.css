@@ -1,0 +1,294 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f2f5, #e4e7eb);
+  padding-top: 70px;
+  min-height: 100vh;
+}
+
+/* ================= TOP NAVBAR ================= */
+.top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+}
+
+/* Right side actions */
+.right-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Remove form spacing issue */
+.right-actions form {
+  margin: 0;
+}
+
+/* ================= BUTTONS ================= */
+.logout-btn,
+.feed-btn, .post-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  min-width: 95px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Logout */
+.logout-btn {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.logout-btn:hover {
+  background: #d93636;
+}
+
+/* Feed */
+.feed-btn {
+  background: #0095f6;
+  color: #fff;
+}
+
+.feed-btn:hover {
+  background: #0077cc;
+}
+
+.post-btn {
+  background: #000000;
+  color: #fff;
+}
+
+.post-btn:hover {
+  background: #4f4f4f;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  min-height: calc(100vh - 70px);
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ================= PROFILE CARD ================= */
+.profile-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= PROFILE IMAGE ================= */
+.profile-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #eee;
+  margin-bottom: 20px;
+}
+
+/* ================= TEXT ================= */
+.profile-card h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.email {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.bio {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.profile-card small {
+  display: block;
+  font-size: 13px;
+  color: #999;
+}
+
+/* ================= ERROR ================= */
+.error {
+  text-align: center;
+  color: red;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+/* ================= STATS ================= */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 15px 0 20px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 18px;
+  color: #222;
+}
+
+.stats span {
+  font-size: 13px;
+  color: #777;
+}/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f0f2f5;
+  padding-top: 70px;
+}
+
+/* NAVBAR */
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* ACTIONS */
+.right-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.right-actions form {
+  margin: 0;
+}
+
+/* BUTTONS */
+.logout-btn,
+.feed-btn,
+.post-btn {
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.logout-btn { background: #ff4d4d; }
+.feed-btn { background: #0095f6; }
+.post-btn { background: #000; }
+
+/* CONTAINER */
+.container {
+  padding: 20px;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* PROFILE IMAGE */
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.profile-card h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.email,
+.bio,
+.profile-card small {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.stats strong {
+  font-size: 16px;
+  color: #222;
+}
+
+.stats span {
+  font-size: 12px;
+  color: #777;
+}
+
+/* ERROR */
+.error {
+  text-align: center;
+  color: red;
+  margin-top: 40px;
+}
