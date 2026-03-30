@@ -1,0 +1,103 @@
+/* Center content */
+.node--type-research-article .layout-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Title */
+.page-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.field--name-field-subtitle {
+  font-size: 20px;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+}
+
+/* Author + date inline */
+.field--name-field-author-name,
+.field--name-field-published-on {
+  display: inline-block;
+  font-size: 14px;
+  color: #888;
+  margin-right: 10px;
+}
+
+/* Image */
+.field--name-field-featured-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+/* Abstract */
+.field--name-field-abstract {
+  background: #f6f6f6;
+  padding: 16px;
+  border-left: 4px solid #ccc;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* Body */
+.field--name-field-body {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Headings */
+.field--name-field-body h2 {
+  font-size: 26px;
+  margin-top: 40px;
+}
+
+/* Video fix */
+.field--name-field-video iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Insight */
+.field--name-field-key-insight {
+  background: #fff3cd;
+  padding: 20px;
+  border-left: 5px solid #ffc107;
+  margin: 30px 0;
+}
+
+/* Tags */
+.field--name-field-topics {
+  margin-top: 20px;
+}
+
+.field--name-field-topics a {
+  background: #efefef;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-right: 6px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.field--name-field-topics a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* References */
+.field--name-field-references {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Hide labels (IMPORTANT) */
+.field__label {
+  display: none;
+}
