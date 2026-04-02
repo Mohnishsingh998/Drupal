@@ -1,0 +1,21 @@
+uuid: 6a5190e4-a3d4-4d79-ab0e-bb2c10ca9ce9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_on
+    - node.type.research_article
+  module:
+    - datetime
+id: node.research_article.field_published_on
+field_name: field_published_on
+entity_type: node
+bundle: research_article
+label: 'Published On'
+description: 'Place the publish date here'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

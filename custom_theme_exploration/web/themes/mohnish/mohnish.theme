@@ -25,5 +25,4 @@ function mohnish_preprocess_page(array &$variables): void {
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
 function mohnish_preprocess_node(array &$variables): void {
-
 }

@@ -1,0 +1,19 @@
+uuid: 8db3c613-be72-4315-ad93-05cba827c300
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.research_article
+id: node.research_article.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: research_article
+label: SubTitle
+description: 'Here give your research paper Subtitle'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

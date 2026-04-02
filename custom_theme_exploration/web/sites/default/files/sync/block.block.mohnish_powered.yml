@@ -1,0 +1,22 @@
+uuid: 4fd86989-1f32-472b-a84d-31a017de41ac
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mohnish
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: mohnish_powered
+theme: mohnish
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

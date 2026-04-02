@@ -1,0 +1,31 @@
+uuid: f867edcd-16a3-4cfa-8abc-61e340a6efd0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.research_article
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.topics
+id: node.research_article.field_topics
+field_name: field_topics
+entity_type: node
+bundle: research_article
+label: Topics
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: tags
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: d4ed3592-0975-44c5-9860-df46f303550d
+langcode: en-gb
+status: true
+dependencies: {  }
+id: 587Gd36uqaMz-n5LFU5O2Dq3ziqP6tq2cuWdL_7baIA
+label: 'https://custom-theme-exploration.ddev.site'
+context:
+  language: en-gb

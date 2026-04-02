@@ -1,0 +1,134 @@
+uuid: b1e347db-8a2c-415e-9460-b7a4e27bc1ec
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.research_article.field_abstract
+    - field.field.node.research_article.field_author_name
+    - field.field.node.research_article.field_body
+    - field.field.node.research_article.field_comments
+    - field.field.node.research_article.field_embeded_video_field
+    - field.field.node.research_article.field_featured_image
+    - field.field.node.research_article.field_key_insight
+    - field.field.node.research_article.field_published_on
+    - field.field.node.research_article.field_references
+    - field.field.node.research_article.field_subtitle
+    - field.field.node.research_article.field_topics
+    - node.type.research_article
+  module:
+    - comment
+    - datetime
+    - link
+    - text
+    - user
+    - video_embed_field
+id: node.research_article.default
+targetEntityType: node
+bundle: research_article
+mode: default
+content:
+  field_abstract:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_author_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_comments:
+    type: comment_default
+    label: inline
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_embeded_video_field:
+    type: video_embed_field_video
+    label: above
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+      title_format: '@provider | @title'
+      title_fallback: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_key_insight:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_published_on:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_references:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_topics:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

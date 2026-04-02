@@ -1,0 +1,22 @@
+uuid: 26fc7d20-f65e-46b1-91f7-b63c73283acd
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: research_artical
+label: 'research artical'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  6bfb22ee-127f-455e-918a-c398b34ee6ed:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 6bfb22ee-127f-455e-918a-c398b34ee6ed
+    context_mapping:
+      node: node
+    bundles:
+      research_article: research_article
+selection_logic: and
+weight: -5
+relationships: {  }

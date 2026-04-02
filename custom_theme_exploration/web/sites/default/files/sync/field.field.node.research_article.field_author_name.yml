@@ -1,0 +1,19 @@
+uuid: 7ac4e758-5270-4a93-922b-b4dbefecc5c7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_name
+    - node.type.research_article
+id: node.research_article.field_author_name
+field_name: field_author_name
+entity_type: node
+bundle: research_article
+label: 'Author Name'
+description: 'Name of the author'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
